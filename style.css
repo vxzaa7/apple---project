@@ -58,7 +58,7 @@ table {
 .wrap .nav {
   width: 100%;
   position: fixed;
-  background-color: #333333;
+  background-color: #333333f5;
   z-index: 3;
 }
 
@@ -145,6 +145,10 @@ table {
   color: #0066cc;
 }
 
+.ribbon-shop .shop-item span a:hover {
+  text-decoration: underline;
+}
+
 .i13 {
   margin-top: 45px;
 }
@@ -157,6 +161,15 @@ table {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(./img/i13/hero_iphone13pro_avail__iy77cld0zwii_large_2x.jpg);
+}
+
+@media (max-width: 734px) {
+  .i13 .i13-content {
+    width: 734px;
+    height: 548px;
+    background-size: 734px 548px;
+    background-image: url(./img/i13/hero_iphone13pro_avail__iy77cld0zwii_small_2x.jpeg);
+  }
 }
 
 .i13 .i13-content .i13-txt {
@@ -191,9 +204,21 @@ table {
   text-decoration: underline;
 }
 
-.i13 .i13-content .i13-txt .i13-link a::after {
-  content: '>';
-  margin-left: 10px;
+.i13 .i13-content .i13-txt .i13-link svg {
+  color: #0066cc;
+  margin-left: 5px;
+}
+
+@media (max-width: 734px) {
+  .i13 .i13-content .i13-txt h2 {
+    font-size: 32px;
+  }
+  .i13 .i13-content .i13-txt h3 {
+    font-size: 19px;
+  }
+  .i13 .i13-content .i13-txt .i13-link a {
+    font-size: 17px;
+  }
 }
 
 .ise-content {
@@ -249,9 +274,9 @@ table {
   text-decoration: underline;
 }
 
-.ise-content .ise-txt .ise-link a::after {
-  content: '>';
-  margin-left: 10px;
+.ise-content .ise-txt .ise-link svg {
+  color: #0066cc;
+  margin-left: 5px;
 }
 
 .tv-content {
@@ -301,6 +326,7 @@ table {
 }
 
 .tv-content .tv-txt .tv-link a svg {
+  width: 20px;
   padding-left: 5px;
 }
 
@@ -325,7 +351,6 @@ table {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: red;
 }
 
 @media (max-width: 734px) {
@@ -335,7 +360,7 @@ table {
 }
 
 .card .item {
-  height: 624px;
+  height: 586px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,9 +371,14 @@ table {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  border: 1px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 734px) {
+  .card .item {
+    height: 520px;
+  }
 }
 
 .card .grow-1 {
@@ -363,9 +393,9 @@ table {
 
 @media (max-width: 734px) {
   .card .grow-1 {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin: 10px 10px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 10px 0;
   }
 }
 
@@ -381,14 +411,17 @@ table {
 
 @media (max-width: 734px) {
   .card .grow-2 {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    margin: 10px 10px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 10px 0;
   }
 }
 
 .wwdc22 {
   position: relative;
+}
+
+.wwdc22 .wwdc22-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,25 +435,40 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.wwdc22 h4 {
   position: absolute;
-  top: 70%;
+  width: 100%;
+  height: 100%;
+  top: 30%;
+  left: 0;
   z-index: 1;
 }
 
-.wwdc22 h5 {
-  position: absolute;
-  top: 75%;
-  z-index: 1;
+.wwdc22 .wwdc22-txt h5 {
   color: #c6e1e6;
   max-width: 370px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 10px;
-  line-height: 30px;
+  line-height: 27px;
   font-size: 20px;
   text-align: center;
+}
+
+.wwdc22 .wwdc22-txt .wwdc-link {
+  margin-top: 10px;
+}
+
+.wwdc22 .wwdc22-txt .wwdc-link a {
+  font-size: 15px;
+  color: #0066cc;
+}
+
+.wwdc22 .wwdc22-txt .wwdc-link a:hover {
+  text-decoration: underline;
+}
+
+.wwdc22 .wwdc22-txt .wwdc-link svg {
+  margin-left: 3px;
+  color: #0066cc;
 }
 
 .wwdc22 video {
@@ -431,5 +479,216 @@ table {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.trade {
+  background-image: url(./img/trade/promo_trade_in_may_2022__bbvnbfzoqzxu_large_2x.jpeg);
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.trade .trade-txt {
+  text-align: center;
+  color: #000;
+  margin-bottom: 260px;
+}
+
+.trade .trade-txt .date {
+  font-size: 18px;
+  color: #bf4800;
+  font-weight: 600;
+}
+
+.trade .trade-txt h4 {
+  margin-top: 15px;
+  position: relative;
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.trade .trade-txt h4 sup {
+  position: absolute;
+  font-size: 0.5em;
+  font-weight: 800;
+  top: 40px;
+  left: 222px;
+}
+
+.trade .trade-txt h4 sup a {
+  color: #000;
+}
+
+.trade .trade-txt h4 sup a:hover {
+  color: #0066cc;
+}
+
+.trade .trade-txt h5 {
+  max-width: 365px;
+  font-size: 21px;
+  line-height: 1.2381;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-top: 10px;
+}
+
+.trade .trade-txt .trade-link {
+  margin-top: 10px;
+}
+
+.trade .trade-txt .trade-link a {
+  color: #0066cc;
+}
+
+.trade .trade-txt .trade-link a:hover {
+  text-decoration: underline;
+}
+
+.trade .trade-txt .trade-link svg {
+  margin-left: 3px;
+  color: #0066cc;
+}
+
+.privacy {
+  background-image: url(./img/privacy/privacy__fzwalkil8paq_large_2x.jpeg);
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.privacy .pri-txt {
+  text-align: center;
+  margin-bottom: 350px;
+}
+
+.privacy .pri-txt h4 {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.privacy .pri-txt .pri-link {
+  margin-top: 10px;
+}
+
+.privacy .pri-txt .pri-link a {
+  color: #fff;
+}
+
+.privacy .pri-txt .pri-link a:hover {
+  text-decoration: underline;
+}
+
+.privacy .pri-txt .pri-link svg {
+  margin-left: 3px;
+  color: #fff;
+}
+
+.watch {
+  background-image: url(./img/watch/promo_watch_lte__djeaso7ukrsm_large_2x.jpeg);
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.watch .watch-txt {
+  text-align: center;
+  margin-bottom: 350px;
+}
+
+.watch .watch-txt h5 {
+  color: #000;
+  margin: 15px 0px;
+  font-size: 21px;
+}
+
+.watch .watch-txt .watch-link a {
+  color: #0066cc;
+  font-size: 16px;
+}
+
+.watch .watch-txt .watch-link a:hover {
+  text-decoration: underline;
+}
+
+.watch .watch-txt .watch-link svg {
+  margin-left: 3px;
+}
+
+.watch .watch-txt .watch-link .shop {
+  margin-left: 28px;
+}
+
+.ipad {
+  background-image: url(./img/ipad/promo_ipadair_avail__ferd4bfpcdm6_large_2x.jpeg);
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ipad .ipad-txt {
+  text-align: center;
+  margin-bottom: 380px;
+}
+
+.ipad .ipad-txt h5 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin: 10px 0px 15px 0px;
+}
+
+.ipad .ipad-txt .ipad-link a {
+  color: #0066cc;
+  font-size: 16px;
+}
+
+.ipad .ipad-txt .ipad-link a:hover {
+  text-decoration: underline;
+}
+
+.ipad .ipad-txt .ipad-link svg {
+  margin-left: 3px;
+}
+
+.ipad .ipad-txt .ipad-link .shop {
+  margin-left: 28px;
+}
+
+.pride {
+  background-image: url(./img/pride/promo_pride__6iq9ryajnw2q_large_2x.jpeg);
+  width: 1262px;
+  height: 580px;
+  background-size: 1262px 590px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pride .pride-txt {
+  text-align: center;
+  margin-bottom: 380px;
+}
+
+.pride .pride-txt h4 {
+  font-size: 40px;
+  color: #000;
+  font-weight: 600;
+}
+
+.pride .pride-txt h5 {
+  margin: 5px 0px 8px 0px;
+}
+
+.pride .pride-txt .pride-link a {
+  color: #0066cc;
 }
 /*# sourceMappingURL=style.css.map */
