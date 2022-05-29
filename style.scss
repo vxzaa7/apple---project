@@ -1,0 +1,352 @@
+@import './scss/reset';
+
+$base_link_blue:#0066cc;
+
+// 833 nav footer
+// 734 card
+
+@mixin pad{
+    @media(max-width:833px){
+      @content;
+    }
+  }
+  @mixin mobile{
+    @media(max-width:734px){
+      @content;
+    }
+  }
+
+.wrap {
+    .nav {
+        width: 100%;
+        position: fixed;
+        background-color: #333333;
+        z-index: 3;
+
+        &__item {
+            max-width: 980px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+
+            ul {
+                width: 100%;
+                display: flex;
+                height: 44px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 22px;
+
+                li {
+                    margin: 0px 8px;
+
+                    a {
+                        color: #f5f5f5;
+                        font-size: 0.5rem;
+                        padding: 0 8px;
+                    }
+
+
+                }
+
+                .apple {
+                    background-size: 14px 44px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    width: 15px;
+                    background-image: url(./img/icon/globalnav_apple_image__b5er5ngrzxqq_large.svg);
+                }
+
+                .search {
+                    background-repeat: no-repeat;
+                    background-image: url(./img/icon/Vector.svg);
+                    background-position: center center;
+                    width: 15px;
+                }
+
+                .bag {
+                    background-size: 13px 44px;
+                    background-repeat: no-repeat;
+                    background-image: url(./img/icon/globalnav_bag_image__yzte50i47ciu_large.svg);
+                    background-position: center center;
+                    width: 13px;
+                }
+            }
+        }
+
+    }
+}
+
+.ribbon-shop {
+    position: relative;
+    top: 46px;
+    z-index: 1;
+    background-color: #f5f5f7;
+
+    .shop-item {
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 12px 0px;
+
+        span {
+            font-size: 0.8rem;
+            color: #1d1d1f;
+            padding: 0px 20px;
+
+            a {
+                color: $base_link_blue;
+            }
+        }
+    }
+}
+
+
+.i13 {
+    margin-top: 45px;
+    .i13-content {
+        padding-top: 47px;
+        width: 100％;
+        height: 90vh;
+        background-size: 3008px 624px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(./img/i13/hero_iphone13pro_avail__iy77cld0zwii_large_2x.jpg);
+
+        .i13-txt {
+            text-align: center;
+
+            h2 {
+                font-size: 56px;
+                line-height: 1.1;
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin-top: 15px;
+                font-weight: 400;
+                letter-spacing: -0.2px;
+            }
+
+            .i13-link {
+                margin-top: 22px;
+
+                a {
+                    font-size: 21px;
+                    margin: 0px 10px;
+                    font-weight: 200;
+                    color: $base_link_blue;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                a::after {
+                    content: '>';
+                    margin-left: 10px;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.ise-content {
+
+    padding-top: 47px;
+    width: 100%;
+    height: 624px;
+    background-size: 3008px 624px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./img/ise/hero_iphonese_preorder__e4eta8trjs66_large_2x.jpeg);
+
+    .ise-txt {
+        text-align: center;
+        margin-top: 35px;
+
+        span {
+            display: block;
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+        }
+
+        .ise-logo {
+            margin: 0 auto;
+            width: 221px;
+            height: 55px;
+            background-size: 221px 55px;
+            background-repeat: no-repeat;
+            background-image: url(./img/ise/logo_hero_iphonese__dtb7zrygggeq_large_2x.png);
+        }
+
+        h3 {
+            margin-top: 6px;
+            font-size: 24px;
+            line-height: 2rem;
+            font-weight: 400;
+        }
+
+        .ise-link {
+            margin-top: 22px;
+
+            a {
+                font-size: 21px;
+                margin: 0px 10px;
+                font-weight: 200;
+                color: $base_link_blue;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a::after {
+                content: '>';
+                margin-left: 10px;
+            }
+
+        }
+    }
+}
+
+.tv-content {
+    position: relative;
+    height: 100vh;
+
+    .tv-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        .tv-logo {
+            margin-top: 200px;
+        }
+
+        .tv-title {
+            margin-top: 14px;
+        }
+
+        .tv-link {
+            margin-top: 40px;
+
+            a {
+                padding: 8px 16px;
+                background-color: #fff;
+                color: #000;
+                border-radius: 980px;
+
+                svg {
+                    padding-left: 5px;
+                }
+            }
+
+            a:hover {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+
+        }
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    @include mobile{
+        background:blue;
+      }
+
+    .item {
+        height: 624px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid white;
+        box-sizing: border-box;
+        
+    }
+
+    .grow-1 {
+        margin: 10px 5px 10px 10px;
+        flex: 1 0;
+        flex-basis: 40%;
+        background-color: #f08bc3;
+        @include mobile{
+            flex-basis: 50%;
+            margin: 10px 10px;
+          }
+    }
+
+    .grow-2 {
+        margin: 10px 10px 10px 5px;
+        flex-grow: 1;
+        flex-basis: 40%;
+        background-color: skyblue;
+        @include mobile{
+            flex-basis: 50%;
+            margin: 10px 10px;
+          }
+    }
+
+}
+
+.wwdc22 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+        position: absolute;
+        top: 70%;
+        z-index: 1;
+    }
+
+    h5 {
+        position: absolute;
+        top: 75%;
+        z-index: 1;
+        color: #c6e1e6;
+        max-width: 370px;
+        margin-top: 15px;
+        margin-left: 10px;
+        line-height: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
